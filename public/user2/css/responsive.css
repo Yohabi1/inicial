@@ -1,0 +1,599 @@
+/*--------------------------------------------------
+    ## All responsive style
+---------------------------------------------------*/
+.signin-form-area .signin-form .btn {
+	line-height: 60px;
+}
+@media all and (min-width: 1600px) {
+	.banner-bg-image {
+		background-position: -380px -300px;
+		background-size: 140%;
+		padding: 181px 0 224px;
+	}
+	.banner-slider .owl-dots {
+		left: -31%;
+	}
+	.bg-image-1 {
+	    background-size: 125% 63%;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 1170px;
+	}
+}
+@media all and (max-width: 1199px) {
+	.page-title-area .title {
+	    font-size: 65px;
+	}
+	.blog-single-area .blog-details-bottom .tags-area ul li {
+		margin: 0 4px;
+	}
+	.banner-area-2 .banner-inner {
+	    margin: 145px 0;
+	}
+	.banner-area-2:after {
+		background-size: 211%;
+	}
+	.banner-area-2.banner-bg-image {
+		background-position: center right;
+	}
+	.single-blog-wrap .blog-details h5 {
+	    font-size: 18px;
+	}
+	.social-area.social-area-2 li {
+		margin-right: 14px;
+	}
+	.navbar-area .nav-container .logo {
+		width: 250px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li a {
+		font-size: 14px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
+		margin-left: 18px;
+	}
+	.nav-right-part ul li:first-child a {
+		padding: 0 25px;
+		font-size: 14px;
+	}
+	.nav-right-part-desktop {
+	    margin-left: 15px;
+	}
+	h1 {
+	    font-size: 55px;
+	}
+	h5 {
+	    font-size: 22px;
+	}
+	p {
+		font-size: 14px;
+	}
+	.banner-bg-image {
+		background-size: 218%;
+	}
+	.banner-area {
+		padding: 350px 0 224px;
+	}
+	.banner-slider .owl-dots {
+		position: absolute;
+	    display: inline-flex;
+	    bottom: -30px;
+	    top: auto;
+	    left: 50%;
+	    margin-left: -30px;
+	}
+	.banner-slider .owl-dots .owl-dot {
+		margin-bottom: 0;
+		margin-right: 11px;
+	}
+	.banner-inner {
+	    margin: 0;
+	}
+	.section-title h2 {
+		font-size: 40px;
+	}
+	.pd-bottom-196 {
+	    padding-bottom: 96px;
+	}
+	.single-intro-wrap {
+		padding: 50px 30px 32px;
+	}
+	.single-intro-wrap h5 {
+		font-size: 20px;
+	}
+	.single-history-wrap .thumb {
+		height: 100px;
+		width: 100px;
+		line-height: 96px;
+	}
+	.invest-plan-table tr td, .invest-plan-table tr th {
+		font-size: 24px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		height: 120px;
+	    width: 120px;
+	    line-height: 120px;
+	    margin-left: -4px;
+	    font-size: 32px;
+	}
+	.invest-plan-table .btn-area {
+		height: 120px;
+	    line-height: 115px;
+	    margin-right: -8px;
+	}
+	.invest-plan-table .invest-plan-wrap .media-body span {
+	    font-size: 15px;
+	}
+	.invest-plan-table .invest-plan-wrap {
+		padding: 0 21px 0 15px;
+		height: 120px;
+	}
+	.invest-plan-table .media .thumb {
+		width: 50px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body .days {
+		margin-bottom: -5px;
+	}
+	.invest-plan-table .invest-term-wrap {
+		width: 146px;
+	}
+	.analysis-pill .nav-pills .nav-item {
+	    width: 29.8%;
+	}
+	.single-analysis-wrap .wrap-details {
+		padding: 18px 30px 12px;
+	}
+	.single-analysis-wrap .wrap-price {
+		padding: 15px 0;
+	}
+	.testimonial-wrap .testimonial-wrap-details h6 span {
+		display: block;
+		margin-top: 8px;
+	}
+	.subscribe-area .media h5 {
+		font-size: 18px;
+	}
+	.subscribe-area {
+		padding-right: 45px;
+	}
+	.subscribe-area .media .thumb {
+		margin-right: 20px;
+	}
+	.footer-widget .widget-title {
+	    font-size: 20px;
+	}
+	.widget_category .social-area {
+		padding: 0 23px;
+	}
+}
+@media all and (max-width: 991px) {
+	.sidebar {
+		margin-top: 40px;
+	}
+	.banner-area-2:after {
+	    background-size: 282%;
+	}
+	.testimonial-area {
+		margin-bottom: -5px;
+	}
+	.invest-plan-table {
+		margin: 10px !important;
+	}
+	.invest-plan-table .btn-area {
+		margin-right: 0;
+		height: 80px;
+		line-height: 74px;
+		padding: 0 15px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		margin-left: 0;
+	}
+	.invest-plan-table .btn-area .btn {
+		padding: 0 25px;
+	}
+	.nav-right-part {
+	    margin-left: auto;
+	}
+	.responsive-mobile-menu {
+		top: 30px;
+    	right: 25px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		position: absolute;
+	    left: 21px;
+	    width: 94.5%;
+	    top: 92px;
+	    background: linear-gradient(to right, #DD4372 35%, #F3D038 100%);
+	    border-radius: 10px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav {
+		margin-top: 0;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li:first-child,
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
+		margin: 0 18px;
+	}
+	.banner-area {
+	    padding: 300px 0 224px;
+	}
+	.banner-inner {
+		text-align: center;
+	}
+	.banner-bg-image {
+		background-position: center -115px;
+		background-size: 254%;
+	}
+	.banner-slider .owl-dots {
+		bottom: -40px;
+	}
+	.profit-wrap-area {
+		padding: 46px 50px 76px;
+	}
+	.btn {
+		padding: 0 25px;
+		font-size: 14px;
+	}
+	.bg-image-1 {
+		background-size: 200% 50%;
+	}
+	.single-history-wrap .wrap-details h6 {
+		font-size: 18px;
+	}
+	.invest-plan-table tr td, .invest-plan-table tr th {
+		padding: 0 0px 0 12px;
+		font-size: 20px;
+	}
+	.invest-plan-table .invest-plan-wrap {
+		width: 251px;
+		height: 80px;
+	}
+	.invest-plan-table tr td .daily-percentage, .invest-plan-table tr th .daily-percentage {
+		width: 80px;
+		height: 80px;
+		font-size: 24px;
+		line-height: 80px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body h6 {
+		font-size: 18px;
+	}
+	.invest-plan-table .invest-term-wrap .media-body h4 {
+		font-size: 22px;
+	}
+	.analysis-area {
+		background-size: 200% 80%;
+	}
+	.analysis-pill {
+		padding: 20px 10px;
+	}
+	.analysis-pill .nav-pills .nav-item .nav-link {
+		font-size: 14px;
+	}
+	.analysis-pill .nav-pills .nav-item {
+		margin: 0 10px;
+		width: 30.2%;
+	}
+	.payment-wrap {
+		padding-top: 56px;
+		padding-bottom: 46px;
+	}
+	.subscribe-area {
+		margin-top: 50px;
+	}
+	.subscribe-area .media .thumb img {
+		width: 100px;
+	}
+	.subscribe-area .media h5 {
+	    font-size: 14px;
+	}
+	.section-title {
+	    margin-bottom: 50px;
+	}
+	.page-title-area .title {
+	    font-size: 49px;
+	}
+	.topbar-area .topbar-content span {
+		font-size: 14px;
+	}
+	.signin-form-area .left-shape {
+		display: none;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.blog-single-area .blog-details-bottom .tags-area {
+		margin-bottom: 20px;
+	}
+	.banner-area-2:after {
+	    background-size: 274%;
+	}
+	.topbar-area .topbar-content span {
+	    font-size: 12px;
+	}		
+	.page-title-area .title,
+	h1 {
+	    font-size: 46px;
+	}
+	.section-title h2 {
+	    font-size: 30px;
+	}
+	.profit-wrap-area {
+	    padding: 40px 30px 36px;
+	}
+	.profit-wrap-area .invest-wrap {
+		margin-top: 20px;
+	}
+	.profit-wrap-area h6 {
+		font-size: 16px;
+	}
+	.invest-range {
+		margin-top: 30px;
+		padding: 20px 20px 25px 24px;
+	}
+	.ctr-area .ctr-wrap p,
+	.section-title p {
+		font-size: 14px;
+	}
+	.analysis-area {
+	    background-size: 230% 65%;
+	}
+	.analysis-pill {
+	    padding: 25px 20px 0 20px;
+	    border-radius: 46px;
+	}
+	.analysis-pill .nav-pills {
+		justify-content: center;
+	}
+	.analysis-pill .nav-pills .nav-item {
+		width: 45.74%;
+		margin-bottom: 25px;
+	}
+	.ctr-area .ctr-wrap h3 {
+	    font-size: 34px;
+	}
+	.payment-wrap ul li {
+		margin-right: 20px;
+	}
+	.payment-wrap ul li a {
+		font-size: 18px;
+	}
+	.payment-wrap ul li a img {
+		width: 80px;
+	}
+	.subscribe-area {
+		padding: 30px;
+		border-radius: 46px;
+	}
+	.subscribe-area .media {
+		display: block;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.subscribe-area .media .thumb {
+		display: inline-block;
+		margin: 0 0 20px 0;
+	}
+	.bg-image-1 {
+	    background-size: 205% 38%;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		width: 92.7%;
+	}
+	.page-title-area {
+		padding: 242px 0 90px;
+		text-align: center;
+	}
+	.banner-inner .single-input-wrap {
+		width: 84%;
+	}
+	.banner-inner .single-input-wrap .single-input {
+		padding: 0 140px 0 30px;
+	}
+}
+@media all and (max-width: 576px) {
+	.banner-bg-image {
+		background-size: 200% 115%;
+	}	
+	.banner-area-2:after {
+	    background-size: 365%;
+	}
+}
+@media all and (max-width: 575px) {
+	.banner-inner .single-input-wrap {
+	    width: 100%;
+	}
+	.single-blog-wrap .blog-details h4 {
+		font-size: 24px;
+	}
+	.single-blog-wrap .blog-details span {
+	    font-size: 13px;
+	}
+	.banner-inner .single-input-wrap .single-input {
+		height: 50px;
+	}
+	.banner-inner .single-input-wrap .btn {
+	    height: 46px;
+	    line-height: 43px;
+	}
+	.banner-inner .video-play-btn {
+		margin-top: 50px;
+	}
+	.banner-area-2 .banner-inner {
+	    margin: 75px 0;
+	}
+	.banner-area-2:after {
+	    background-size: 490%;
+	}
+	.topbar-area .lang-select {
+		display: none;
+	}	
+	.navbar-area {
+		top: 39px;
+	}
+	.responsive-mobile-menu {
+	    top: 26px;
+	}
+	.nav-right-part {
+	    margin-right: 38px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		top: 68px;
+		width: 90.3%;
+	}
+	.page-title-area .title,
+	h1 {
+	    font-size: 35px;
+	}
+	.banner-area {
+	    padding: 250px 0 224px;
+	}
+	.profit-wrap-area .nice-select {
+		margin-bottom: 20px;
+	}
+	.profit-wrap-area .invest-wrap {
+		margin-top: 0;
+	}
+	.profit-wrap-area .invest-wrap .nice-select {
+		margin-bottom: 0;
+	}
+	.analysis-pill .nav-pills .nav-item {
+	    width: 100%;
+	}
+	.payment-wrap ul li a img {
+	    width: 60px;
+	}
+	.analysis-area {
+	    background-size: 242% 34%;
+	}
+	.bg-image-1 {
+	    background-size: 248% 31%;
+	}
+	.page-title-area {
+		padding: 202px 0 80px;
+	}
+	.breadcrumb {
+		font-size: 16px;
+	}
+	.faq-area .accordion .card .card-body {
+		font-size: 14px;
+	}
+	.faq-area .accordion .card .card-header h5 .btn {
+		font-size: 16px;
+		padding: 20px 50px 20px 20px;
+	}
+	.entry-comment .comment-list .single-comment-item.reply {
+		margin-left: 0;
+	}
+	.entry-comment .comment-list .single-comment-item {
+		display: block;
+	}
+	.entry-comment .comment-list .single-comment-item .thumb {
+		margin-bottom: 20px;
+	}
+}
+@media all and (max-width: 375px) {
+	.single-blog-wrap .blog-details span.comment {
+		display: block;
+	}
+	.banner-area-2 .banner-inner {
+	    margin: 25px 0 70px;
+	}
+	.single-blog-wrap .blog-details h4 {
+	    font-size: 18px;
+	}
+	.single-blog-wrap .blog-details p {
+		font-size: 13px;
+	}
+	.blog-single-area .single-blog-wrap .blog-details {
+		padding: 17px 20px 15px;
+	}
+	.blog-single-area .blog-details-bottom .tags-area ul li {
+		margin: 0 3px;
+		margin-top: 8px;
+	}
+	.blog-single-area .blog-details-bottom .tags-area ul li a {
+		font-size: 12px;
+	}
+	.blog-single-area .blog-details-bottom .tags-area ul li:first-child {
+		margin-left: 0;
+	}
+	.blog-single-area .single-blog-wrap .blockquote-wrapper .left {
+		display: none;
+	}
+	.blog-single-area .single-blog-wrap .blockquote-wrapper {
+		padding: 15px 20px 16px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+	    top: 75px;
+	}
+	.payment-wrap {
+		padding: 56px 15px 16px;
+	}	
+	.payment-wrap ul li {
+		margin: 0 10px 30px;
+	}
+	.topbar-area {
+		display: none;
+	}
+	.navbar-area {
+	    top: 5px;
+	}
+	.navbar-area .nav-container .navbar-collapse {
+		width: 88.5%;
+	}
+	h1 {
+	    font-size: 28px;
+	}
+	h5 {
+	    font-size: 18px;
+	}
+	.section-title h2 {
+	    font-size: 22px;
+	}
+	.ctr-area .ctr-wrap h3 {
+	    font-size: 22px;
+	}
+	.nav-right-part .btn {
+		display: none;
+	}
+	.navbar-area .nav-container .logo a img {
+	    width: 160px;
+	}
+	.responsive-mobile-menu {
+	    top: 29px;
+	}
+	.page-title-area {
+	    padding: 172px 0 80px;
+	}
+	.single-subscribe-wrap input {
+		padding: 0 25px;
+	}
+	.single-subscribe-wrap .btn {
+		position: initial;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.signin-form-area .signin-bottom .sign-with-title:after,
+	.signin-form-area .signin-bottom .sign-with-title:before {
+		width: 32%;
+	}
+	.banner-inner .single-input-wrap .btn {
+		position: initial;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.banner-inner .single-input-wrap .single-input {
+	    padding: 0 30px;
+	}
+}
+@media all and (max-width: 320px) {
+	.banner-area-2:after {
+	    background-size: 545%;
+	}
+	.faq-area .accordion .card .card-header h5 .btn {
+		font-size: 14px;
+	}
+	.signin-form-area .signin-top .signin-title {
+		font-size: 26px;
+	}
+}

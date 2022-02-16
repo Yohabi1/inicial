@@ -1,0 +1,22 @@
+/*--------------------------------------------------
+    ##Footer
+---------------------------------------------------*/
+.bg-footer-img {
+	background: url(../img/footer/bg.png);
+	background-size: cover;
+	background-position: center 250px;
+    background-repeat: no-repeat;
+}
+.footer-area {
+	padding: 94px 0 20px;
+}
+.footer-bottom {
+	background: #FFFFFF;
+	padding: 25px 0;
+	p {
+		margin-bottom: 0;
+		a {
+			color: #DD1C63;
+		}
+	}
+}
