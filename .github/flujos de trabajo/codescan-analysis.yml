@@ -1,0 +1,76 @@
+# This workflow uses actions that are not certified by GitHub.
+
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow requires that you have an existing account with codescan.io
+# For more information about configuring your workflow,
+# read our documentation at https://github.com/codescan-io/codescan-scanner-action
+name: CodeScan- nombre: Configuración Java JDK
+  usos: acciones/setup-java@v2.5.0
+  con:
+    # La versión de Java a configurar. Toma una versión completa o parcial de Java. Ver ejemplos de sintaxis admitida en el archivo README
+    versión java:
+    # Distribución Java. Consulte la lista de distribuciones admitidas en el archivo README
+    distribución:
+    # El tipo de paquete (jdk, jre, jdk+fx, jre+fx)
+    paquete java: # opcional, por defecto es jdk
+    # La arquitectura del paquete
+    arquitectura: # opcional, por defecto es x64
+    # Ruta a donde se encuentra el JDK comprimido
+    jdkFile: # opcional
+    # Establezca esta opción si desea que la acción busque la última versión disponible que cumpla con las especificaciones de la versión
+    comprobar-último: # opcional
+    # ID del repositorio de distributionManagement en el archivo pom.xml. El valor predeterminado es `github`
+    server-id: # opcional, el valor predeterminado es github
+    # Nombre de la variable de entorno para el nombre de usuario para la autenticación en el repositorio de Apache Maven. El valor predeterminado es $GITHUB_ACTOR
+    nombre de usuario del servidor: # opcional, el valor predeterminado es GITHUB_ACTOR
+    # Nombre de variable de entorno para contraseña o token para autenticación en el repositorio de Apache Maven. El valor predeterminado es $GITHUB_TOKEN
+    contraseña del servidor: # opcional, el valor predeterminado es GITHUB_TOKEN
+    # Ruta donde se escribirá el archivo settings.xml. El valor predeterminado es ~/.m2.
+    configuración-ruta: # opcional
+    # Sobrescriba el archivo settings.xml si existe. El valor predeterminado es "verdadero".
+    configuración de sobrescritura: # opcional, el valor predeterminado es verdadero
+    # Clave privada GPG para importar. El valor predeterminado es una cadena vacía.
+    gpg-clave-privada: # opcional
+    # Nombre de la variable de entorno para la frase de contraseña de la clave privada de GPG. El valor predeterminado es $GPG_PASSPHRASE.
+    frase de contraseña gpg: # opcional
+    # Nombre de la plataforma de compilación para almacenar en caché las dependencias. Puede ser "maven" o "gradle".
+    caché: # opcional
+    # Solución alternativa para pasar el estado del trabajo al paso de publicación del trabajo. Esta variable no está diseñada para configuración manual
+    estado del trabajo: # opcional, el valor predeterminado es ${{ job.status }}
+
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main ]
+  schedule:
+    - cron: '15 7 * * 6'
+
+jobs:
+    CodeScan:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v2
+            -   name: Cache files
+                uses: actions/cache@v2
+                with:
+                    path: |
+                        ~/.sonar
+                    key: ${{ runner.os }}-sonar
+                    restore-keys: ${{ runner.os }}-sonar
+            -   name: Run Analysis
+                uses: codescan-io/codescan-scanner-action@5b2e8c5683ef6a5adc8fa3b7950bb07debccce12
+                with:
+                    login: ${{ secrets.CODESCAN_AUTH_TOKEN }}
+                    organization: ${{ secrets.CODESCAN_ORGANIZATION_KEY }}
+                    projectKey: ${{ secrets.CODESCAN_PROJECT_KEY }}
+            -   name: Upload SARIF file
+                uses: github/codeql-action/upload-sarif@v1
+                with:
+                    sarif_file: codescan.sarif
